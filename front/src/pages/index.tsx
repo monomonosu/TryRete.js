@@ -4,7 +4,9 @@ export default function Home() {
   return (
     <>
       <p>↓リンク</p>
-      <Link href={`/sample`}>・サンプルコード</Link>
+      <div>
+        <Link href={`/sample`}>・サンプルコード</Link>
+      </div>
     </>
   );
 }

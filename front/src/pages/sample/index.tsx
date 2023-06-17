@@ -1,4 +1,4 @@
-import createEditor from "../createEditor";
+import createEditor from "../../components/createEditor";
 import { useRete } from "rete-react-render-plugin";
 
 export default function Sample() {

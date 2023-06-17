@@ -1,12 +1,15 @@
-import createEditor from "./createEditor";
-import { useRete } from "rete-react-render-plugin";
+import Link from "next/link";
 
-export default function Hoge() {
-  const [ref] = useRete(createEditor);
-
+export default function Home() {
   return (
-    <div className="App">
-      <div ref={ref} style={{ height: "100vh", width: "100vw" }}></div>
-    </div>
+    <>
+      <p>↓リンク</p>
+      <div>
+        <Link href={`/sample`}>・サンプルコード</Link>
+      </div>
+      <div>
+        <Link href={`/sample/node`}>・ノードのみ。最小限の構成。</Link>
+      </div>
+    </>
   );
 }
